@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASH LOCKS - Alta Seguridad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-dark': '#1a1a1a',
+                        'brand-darker': '#111111',
+                        'brand-yellow': '#ffcc00',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for specific design nuances */
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1621501103258-3e125a83cc94?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+        .polygon-icon {
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased overflow-x-hidden">
+
+    <nav class="bg-brand-dark text-white fixed w-full z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <div class="text-brand-yellow text-3xl">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="flex flex-col leading-tight">
+                        <span class="text-2xl font-black tracking-wider">ASH LOCKS</span>
+                        <span class="text-[0.6rem] tracking-[0.2em] text-gray-400">ALTA SEGURIDAD</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-8 text-sm font-semibold tracking-wide text-gray-200">
+                    <a href="#" class="text-brand-yellow">INICIO</a>
+                    <a href="#" class="hover:text-brand-yellow transition">PRODUCTOS</a>
+                    <a href="#" class="hover:text-brand-yellow transition">APLICACIONES</a>
+                    <a href="#" class="hover:text-brand-yellow transition">NOSOTROS</a>
+                    <a href="#" class="hover:text-brand-yellow transition">CONTACTO</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:flex">
+                    <a href="#" class="bg-brand-yellow text-brand-dark px-6 py-2.5 rounded font-bold hover:bg-yellow-400 transition flex items-center gap-2">
+                        <i class="fa-solid fa-lock text-sm"></i>
+                        COTIZA AHORA
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center text-2xl text-brand-yellow">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-bg h-screen min-h-[600px] flex items-center relative pt-20">
+        <!-- Slanted bottom divider -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+            <svg class="relative block w-[calc(100%+1.3px)] h-[40px] md:h-[60px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 120L0 120 0 0 1200 120z" class="fill-white"></path>
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10">
+            <div class="max-w-2xl text-white">
+                <h1 class="text-5xl md:text-6xl font-black uppercase leading-[1.1] mb-6 shadow-sm">
+                    EN <span class="text-brand-yellow">ASH LOCKS</span><br>
+                    NOS PREOCUPAMOS POR CUIDAR TU PATRIMONIO
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-lg font-medium">
+                    Dispositivos de alta seguridad diseñados para proteger lo que más te cuesta construir.
+                </p>
+                <a href="#" class="inline-flex items-center gap-3 border-2 border-brand-yellow text-brand-yellow px-6 py-3 font-bold hover:bg-brand-yellow hover:text-brand-dark transition rounded-sm">
+                    <i class="fa-regular fa-shield-check text-xl"></i>
+                    CONOCE NUESTROS PRODUCTOS
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-black uppercase mb-2">
+                SOLUCIONES DE <span class="text-brand-yellow">ALTA SEGURIDAD</span><br>
+                <span class="text-brand-dark">PARA CADA NECESIDAD</span>
+            </h2>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-16 text-sm md:text-base font-medium">
+                Diseñamos y fabricamos dispositivos resistentes y confiables para diferentes aplicaciones, brindando protección donde más lo necesitas.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
+                <!-- Card 1 -->
+                <div class="flex flex-col items-center">
+                    <div class="w-full h-48 bg-gray-200 overflow-hidden relative shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1541888047466-9e120894e63e?auto=format&fit=crop&q=80&w=400" alt="Cortinas Metálicas" class="w-full h-full object-cover">
+                    </div>
+                    <div class="w-16 h-16 bg-brand-dark polygon-icon flex items-center justify-center text-brand-yellow text-2xl -mt-8 relative z-10 border-2 border-white">
+                        <i class="fa-solid fa-door-closed"></i>
+                    </div>
+                    <h3 class="font-bold text-sm mt-4 mb-2 uppercase text-brand-dark">Cortinas Metálicas</h3>
+                    <p class="text-xs text-gray-600 text-center leading-relaxed">Protege tu negocio con dispositivos diseñados para asegurar cortinas metálicas de comercios y establecimientos.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="flex flex-col items-center">
+                    <div class="w-full h-48 bg-gray-200 overflow-hidden relative shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8ed74514f6?auto=format&fit=crop&q=80&w=400" alt="Bodegas" class="w-full h-full object-cover">
+                    </div>
+                    <div class="w-16 h-16 bg-brand-dark polygon-icon flex items-center justify-center text-brand-yellow text-2xl -mt-8 relative z-10 border-2 border-white">
+                        <i class="fa-solid fa-warehouse"></i>
+                    </div>
+                    <h3 class="font-bold text-sm mt-4 mb-2 uppercase text-brand-dark">Bodegas y Almacenes</h3>
+                    <p class="text-xs text-gray-600 text-center leading-relaxed">Seguridad total para tus bodegas y almacenes, evitando accesos no autorizados y robos.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="flex flex-col items-center">
+                    <div class="w-full h-48 bg-gray-200 overflow-hidden relative shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1601569420042-3e2b26090c2e?auto=format&fit=crop&q=80&w=400" alt="Portones" class="w-full h-full object-cover">
+                    </div>
+                    <div class="w-16 h-16 bg-brand-dark polygon-icon flex items-center justify-center text-brand-yellow text-2xl -mt-8 relative z-10 border-2 border-white">
+                        <i class="fa-solid fa-torii-gate"></i>
+                    </div>
+                    <h3 class="font-bold text-sm mt-4 mb-2 uppercase text-brand-dark">Portones</h3>
+                    <p class="text-xs text-gray-600 text-center leading-relaxed">Dispositivos resistentes para asegurar portones corredizos, abatibles y de cualquier tipo.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="flex flex-col items-center">
+                    <div class="w-full h-48 bg-gray-200 overflow-hidden relative shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=400" alt="Cajas de Camiones" class="w-full h-full object-cover">
+                    </div>
+                    <div class="w-16 h-16 bg-brand-dark polygon-icon flex items-center justify-center text-brand-yellow text-2xl -mt-8 relative z-10 border-2 border-white">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <h3 class="font-bold text-sm mt-4 mb-2 uppercase text-brand-dark">Cajas de Camiones</h3>
+                    <p class="text-xs text-gray-600 text-center leading-relaxed">Protege la carga de tus unidades con dispositivos de alta seguridad para cajas de camiones.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="flex flex-col items-center">
+                    <div class="w-full h-48 bg-gray-200 overflow-hidden relative shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=400" alt="Cajuelas" class="w-full h-full object-cover">
+                    </div>
+                    <div class="w-16 h-16 bg-brand-dark polygon-icon flex items-center justify-center text-brand-yellow text-2xl -mt-8 relative z-10 border-2 border-white">
+                        <i class="fa-solid fa-truck-pickup"></i>
+                    </div>
+                    <h3 class="font-bold text-sm mt-4 mb-2 uppercase text-brand-dark">Cajuelas de Camionetas</h3>
+                    <p class="text-xs text-gray-600 text-center leading-relaxed">Asegura las cajuelas de camionetas de reparto con la máxima protección y resistencia.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="flex flex-col items-center">
+                    <div class="w-full h-48 bg-gray-200 overflow-hidden relative shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1613521140785-e85e427f8002?auto=format&fit=crop&q=80&w=400" alt="Sondas de Medición" class="w-full h-full object-cover">
+                    </div>
+                    <div class="w-16 h-16 bg-brand-dark polygon-icon flex items-center justify-center text-brand-yellow text-2xl -mt-8 relative z-10 border-2 border-white">
+                        <i class="fa-solid fa-gas-pump"></i>
+                    </div>
+                    <h3 class="font-bold text-sm mt-4 mb-2 uppercase text-brand-dark">Protección de Sondas</h3>
+                    <p class="text-xs text-gray-600 text-center leading-relaxed">Seguridad especializada para sondas de medición en estaciones de servicio y gasolineras.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-brand-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <!-- Benefit 1 -->
+                <div class="flex gap-4 items-start">
+                    <div class="text-brand-yellow text-4xl">
+                        <i class="fa-regular fa-shield-check"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold uppercase text-sm mb-1 tracking-wide">Alta Seguridad</h4>
+                        <p class="text-gray-400 text-xs leading-relaxed">Diseños robustos y materiales de la más alta calidad.</p>
+                    </div>
+                </div>
+                <!-- Benefit 2 -->
+                <div class="flex gap-4 items-start">
+                    <div class="text-brand-yellow text-4xl">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold uppercase text-sm mb-1 tracking-wide">Resistencia Garantizada</h4>
+                        <p class="text-gray-400 text-xs leading-relaxed">Productos fabricados para resistir intentos de robo y condiciones exigentes.</p>
+                    </div>
+                </div>
+                <!-- Benefit 3 -->
+                <div class="flex gap-4 items-start">
+                    <div class="text-brand-yellow text-4xl">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold uppercase text-sm mb-1 tracking-wide">Fácil Instalación</h4>
+                        <p class="text-gray-400 text-xs leading-relaxed">Diseñados para una instalación rápida, práctica y efectiva.</p>
+                    </div>
+                </div>
+                <!-- Benefit 4 -->
+                <div class="flex gap-4 items-start">
+                    <div class="text-brand-yellow text-4xl">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold uppercase text-sm mb-1 tracking-wide">Confianza y Experiencia</h4>
+                        <p class="text-gray-400 text-xs leading-relaxed">Años de experiencia protegiendo negocios y patrimonio de nuestros clientes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-brand-yellow py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <!-- Left: Logo -->
+                <div class="flex items-center gap-3">
+                    <div class="text-brand-dark text-4xl">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="flex flex-col leading-tight text-brand-dark">
+                        <span class="text-2xl font-black tracking-wider">ASH LOCKS</span>
+                        <span class="text-[0.65rem] font-bold tracking-[0.15em]">PROTEGEMOS LO QUE ES TUYO</span>
+                    </div>
+                </div>
+                
+                <!-- Center: Text -->
+                <div class="text-center md:text-left border-l-0 md:border-l border-brand-dark/20 md:pl-8">
+                    <h3 class="font-black text-lg md:text-xl text-brand-dark uppercase">¿Necesitas protección para tu negocio?</h3>
+                    <p class="text-brand-dark text-sm font-medium">Contáctanos y recibe asesoría personalizada.</p>
+                </div>
+
+                <!-- Right: Button -->
+                <div>
+                    <a href="#" class="bg-brand-dark text-white px-8 py-3 font-bold text-sm hover:bg-gray-800 transition flex items-center gap-3">
+                        CONTACTAR AHORA
+                        <i class="fa-solid fa-chevron-right text-xs text-brand-yellow"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-darker text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Col 1: About -->
+                <div>
+                    <div class="flex items-center gap-3 mb-6 text-white">
+                        <div class="text-3xl">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div class="flex flex-col leading-tight">
+                            <span class="text-xl font-black tracking-wider">ASH LOCKS</span>
+                            <span class="text-[0.55rem] tracking-[0.2em] text-gray-400">ALTA SEGURIDAD</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-xs leading-relaxed">
+                        En Ash Locks nos preocupamos por cuidar tu patrimonio, ofreciendo soluciones de alta seguridad para diferentes aplicaciones.
+                    </p>
+                </div>
+
+                <!-- Col 2: Links -->
+                <div>
+                    <h4 class="font-bold uppercase tracking-wider mb-6 text-sm">Enlaces</h4>
+                    <ul class="space-y-3 text-xs text-gray-400">
+                        <li><a href="#" class="hover:text-brand-yellow transition">Inicio</a></li>
+                        <li><a href="#" class="hover:text-brand-yellow transition">Productos</a></li>
+                        <li><a href="#" class="hover:text-brand-yellow transition">Aplicaciones</a></li>
+                        <li><a href="#" class="hover:text-brand-yellow transition">Nosotros</a></li>
+                        <li><a href="#" class="hover:text-brand-yellow transition">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact -->
+                <div>
+                    <h4 class="font-bold uppercase tracking-wider mb-6 text-sm">Contáctanos</h4>
+                    <ul class="space-y-4 text-xs text-gray-400">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-brand-yellow w-4 text-center"></i>
+                            (55) 1234 5678
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-brand-yellow w-4 text-center"></i>
+                            ventas@ashlocks.com
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-location-dot text-brand-yellow w-4 text-center"></i>
+                            México
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Socials -->
+                <div>
+                    <h4 class="font-bold uppercase tracking-wider mb-6 text-sm">Síguenos</h4>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-8 h-8 rounded-full bg-brand-yellow text-brand-dark flex items-center justify-center hover:bg-white transition">
+                            <i class="fa-brands fa-facebook-f font-bold"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-brand-yellow text-brand-dark flex items-center justify-center hover:bg-white transition">
+                            <i class="fa-brands fa-instagram font-bold"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-brand-yellow text-brand-dark flex items-center justify-center hover:bg-white transition">
+                            <i class="fa-brands fa-whatsapp font-bold text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 pt-8 text-center text-[10px] text-gray-500">
+                <p>&copy; 2024 Ash Locks. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
