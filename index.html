@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASH LOCKS - Herraduras de Seguridad</title>
+  <!-- Iconos de FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Reset Minimalista */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #fafafa;
+      color: #333333;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Cabecera / Hero Section */
+    header {
+      text-align: center;
+      padding: 100px 20px 60px;
+      background-color: #ffffff;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    .logo-text {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #111111;
+      letter-spacing: -1px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      text-transform: uppercase;
+    }
+
+    .logo-text i {
+      font-size: 2rem;
+      color: #111111;
+    }
+
+    p.subtitle {
+      font-size: 1.1rem;
+      color: #666666;
+      max-width: 500px;
+      margin: 0 auto 30px;
+      font-weight: 300;
+    }
+
+    /* Contenedor Principal */
+    .container {
+      max-width: 1000px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #999999;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 50px;
+    }
+
+    /* Cuadrícula de Productos / Servicios */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    /* Tarjeta Limpia y Sencilla */
+    .product-card {
+      background: #ffffff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      border: 1px solid #f0f0f0;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.04);
+    }
+
+    .product-icon {
+      font-size: 2.5rem;
+      color: #111111;
+      margin-bottom: 20px;
+    }
+
+    .product-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #222222;
+    }
+
+    .product-desc {
+      font-size: 0.95rem;
+      color: #777777;
+      margin-bottom: 25px;
+    }
+
+    /* Botones */
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-dark {
+      background-color: #111111;
+      color: #ffffff;
+    }
+
+    .btn-dark:hover {
+      background-color: #333333;
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      color: #111111;
+      border: 1px solid #111111;
+    }
+
+    .btn-outline:hover {
+      background-color: #111111;
+      color: #ffffff;
+    }
+
+    /* Sección de Contacto Directo */
+    .contact-section {
+      text-align: center;
+      padding: 80px 20px;
+      background-color: #111111;
+      color: #ffffff;
+      margin-top: 80px;
+    }
+
+    .contact-section h2 {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 15px;
+    }
+
+    .contact-section p {
+      color: #cccccc;
+      margin-bottom: 30px;
+      font-weight: 300;
+    }
+
+    .btn-whatsapp {
+      background-color: #ffffff;
+      color: #111111;
+      font-weight: 600;
+      padding: 14px 30px;
+      border-radius: 50px;
+    }
+
+    .btn-whatsapp i {
+      margin-right: 8px;
+      color: #25D366; 
+    }
+
+    .btn-whatsapp:hover {
+      transform: scale(1.05);
+      background-color: #f0f0f0;
+    }
+
+    /* Pie de página */
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.85rem;
+      color: #aaaaaa;
+      background-color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabecera Principal -->
+  <header>
+    <div class="logo-text">
+      <i class="fas fa-shield-alt"></i> ASH LOCKS
+    </div>
+    <p class="subtitle">Soluciones avanzadas en herraduras de seguridad. Protege lo que más importa con tecnología y resistencia comprobada.</p>
+    <a href="#contacto" class="btn btn-dark">Solicitar Asesoría</a>
+  </header>
+
+  <!-- Sección de Productos / Beneficios -->
+  <div class="container">
+    <h2 class="section-title">Nuestros Productos</h2>
+    
+    <div class="products-grid">
+      
+      <!-- Producto 1 -->
+      <div class="product-card">
+        <i class="fas fa-lock product-icon"></i>
+        <h3 class="product-title">Herradura Estándar</h3>
+        <p class="product-desc">Máxima resistencia para uso residencial. Fabricada con acero reforzado y diseño anti-palanca para tu tranquilidad diaria.</p>
+        <a href="#contacto" class="btn btn-outline">Ver Detalles</a>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="product-card">
+        <i class="fas fa-door-closed product-icon"></i>
+        <h3 class="product-title">Herradura Alta Seguridad</h3>
+        <p class="product-desc">Ideal para negocios y accesos principales. Sistema de bloqueo multipunto que garantiza protección extrema contra intrusiones.</p>
+        <a href="#contacto" class="btn btn-outline">Ver Detalles</a>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="product-card">
+        <i class="fas fa-fingerprint product-icon"></i>
+        <h3 class="product-title">Herradura Inteligente</h3>
+        <p class="product-desc">El futuro de la seguridad. Integración biométrica y control de acceso digital, manteniendo la robustez de una herradura física.</p>
+        <a href="#contacto" class="btn btn-outline">Ver Detalles</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Sección de Contacto (Llamado a la acción) -->
+  <div class="contact-section" id="contacto">
+    <h2>¿Listo para asegurar tu espacio?</h2>
+    <p>Contáctanos hoy mismo y un experto te ayudará a elegir la herradura perfecta para ti.</p>
+    <!-- Asegúrate de cambiar "tunumerodetelefono" por tu número real de WhatsApp -->
+    <a href="https://wa.me/tunumerodetelefono?text=Hola,%20me%20interesa%20información%20sobre%20las%20herraduras%20de%20seguridad%20ASH%20LOCKS" target="_blank" class="btn btn-whatsapp">
+      <i class="fab fa-whatsapp"></i> Cotizar por WhatsApp
+    </a>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    © 2026 ASH LOCKS - Especialistas en Herraduras de Seguridad. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
